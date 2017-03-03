@@ -1,4 +1,9 @@
-stage "Building"
 node {
-  echo "Hello World"
+  stage("Install") {
+    sh "echo 'install'"
+  }
+
+  stage("Use Bundler to install dependencies") {
+    sh "echo 'install'"
+  }
 }
